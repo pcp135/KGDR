@@ -9,7 +9,7 @@ X = X[:,1:]/255
 print "Data sets loaded and split"
 
 for C_val in [33.33, 66.66, 100, 133.33, 166.66]:
-	for gamma_val in [0.0033, 0.0066, 0.01, 0.033, 0.066]:
+	for gamma_val in [0.01, 0.02, 0.03, 0.04, 0.05, 0.06]:
 
 		kf = KFold(len(Y), n_folds=5, indices=False)
 		classifier = [0]*5
@@ -29,6 +29,7 @@ for C_val in [33.33, 66.66, 100, 133.33, 166.66]:
 			print "Accuracy with C = %f and gamma = %f on fold %i: %f" % (
 					C_val, gamma_val, model_num+1, accuracy[model_num])
 			
+		print classifier[model_num]
 		print "Overall accuracy with C = %f and gamma = %f: %f" % (
 							C_val, gamma_val, np.mean(accuracy))
 
