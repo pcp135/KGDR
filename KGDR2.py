@@ -5,10 +5,10 @@ from scipy import stats
 import pylab as pl
 
 X = np.genfromtxt('reducedtrain.csv', delimiter=',')
-test_set = np.genfromtxt('test.csv', delimiter=',')
+#test_set = np.genfromtxt('test.csv', delimiter=',')
 Y = X[:,0]
 X = X[:,1:]/255
-test_set /= 255
+#test_set /= 255
 print "Data sets loaded and split"
 
 kf = KFold(len(Y), n_folds=5, indices=False)
@@ -31,27 +31,13 @@ for model_num, (train, test) in enumerate(kf):
 	    classifier[model_num], metrics.classification_report(expected, predicted))
 	#print "Confusion matrix:\n%s" % metrics.confusion_matrix(expected, predicted)
 	confused = predicted != expected
-	modifier = 0
-	for index, (image, label) in enumerate(zip(X_test[confused], predicted[confused]))):
-		pl.subplot(2, 4, index +modifier+ 1)
+	modifier = 1
+	for index, (image, guess, actual) in enumerate(
+			zip(X_test[confused], predicted[confused], Y_test[confused])):
+		pl.subplot(2, 4, index + modifier)
 		pl.axis('off')
 		pl.imshow(image.reshape(28,28), cmap=pl.cm.gray_r, interpolation='nearest')
-		pl.title('Prediction: %i' % label)
-		if index == 8:
+		pl.title('Pred: %i, Act %i' % (guess, actual))
+		if (index+modifier) % 8 == 0:
 			pl.show()
 			modifier-=8
-
-pred=np.zeros(test_set.shape[0])
-#val=np.zeros(X.shape[0])
-for i, model in enumerate(classifier):
-	#val=np.vstack((val, model.predict(X)))
-	pred=np.vstack((pred, model.predict(test_set)))
-
-#voted = stats.mode(val[1:6],axis=0)[0][0]
-#print metrics.classification_report(Y, voted)
-voted = stats.mode(pred[1:6],axis=0)[0][0]
-
-f=open('result5.csv','w')
-for value in voted:
-	f.write('%s\n' % (int(value),))
-f.close()
