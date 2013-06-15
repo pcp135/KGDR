@@ -13,6 +13,7 @@ for C_val in [33.33, 66.66, 100, 133.33, 166.66]:
 
 		kf = KFold(len(Y), n_folds=5, indices=False)
 		classifier = [0]*5
+		accuracy = [0]*5
 		for model_num, (train, test) in enumerate(kf):
 
 			X_train, X_test, Y_train, Y_test = X[train], X[test], Y[train], Y[test]
@@ -23,7 +24,11 @@ for C_val in [33.33, 66.66, 100, 133.33, 166.66]:
 
 			expected = Y_test
 			predicted = classifier[model_num].predict(X_test)
+			accuracy[model_num] = metrics.accuracy_score(expected, predicted)
 
-			print "Overall accuracy with C = %f and gamma = %f: %f" % (
-					C_val, gamma_val, metrics.accuracy_score(expected, predicted))
+			print "Accuracy with C = %f and gamma = %f on fold %i: %f" % (
+					C_val, gamma_val, model_num+1, accuracy[model_num])
+			
+		print "Overall accuracy with C = %f and gamma = %f: %f" % (
+							C_val, gamma_val, np.mean(accuracy))
 
