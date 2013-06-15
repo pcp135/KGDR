@@ -8,24 +8,22 @@ Y = X[:,0]
 X = X[:,1:]/255
 print "Data sets loaded and split"
 
-kf = KFold(len(Y), n_folds=5, indices=False)
-classifier = [0]*5
-for model_num, (train, test) in enumerate(kf):
+for C_val in [33.33, 66.66, 100, 133.33, 166.66]:
+	for gamma_val in [0.0033, 0.0066, 0.01, 0.033, 0.066]:
 
-	X_train, X_test, Y_train, Y_test = X[train], X[test], Y[train], Y[test]
+		kf = KFold(len(Y), n_folds=5, indices=False)
+		classifier = [0]*5
+		for model_num, (train, test) in enumerate(kf):
 
-	classifier[model_num] = svm.SVC(C=100,cache_size=750,gamma=0.01)
+			X_train, X_test, Y_train, Y_test = X[train], X[test], Y[train], Y[test]
 
-	# We learn the digits on the first half of the digits
-	classifier[model_num].fit(X_train, Y_train)
+			classifier[model_num] = svm.SVC(C=100,cache_size=750,gamma=0.01)
 
-	# Now predict the value of the digit on the second half:
-	expected = Y_test
-	predicted = classifier[model_num].predict(X_test)
+			classifier[model_num].fit(X_train, Y_train)
 
-	print "Classification report for classifier on cross validation set %s:\n%s\n" % (
-	    classifier[model_num], metrics.classification_report(expected, predicted))
-	print "Overall accuracy with C = %f and gamma = %f: %f" % (
-			C_val, gamma_val, metrics.accuracy_score(expected, predicted))
-	#print "Confusion matrix:\n%s" % metrics.confusion_matrix(expected, predicted)
+			expected = Y_test
+			predicted = classifier[model_num].predict(X_test)
+
+			print "Overall accuracy with C = %f and gamma = %f: %f" % (
+					C_val, gamma_val, metrics.accuracy_score(expected, predicted))
 
