@@ -19,6 +19,7 @@ with open('KGDR4.log','a') as f:
 			accuracy = [0]*5
 			for model_num, (train, test) in enumerate(kf):
 
+				f.flush()
 				X_train, X_test, Y_train, Y_test = X[train], X[test], Y[train], Y[test]
 
 				classifier[model_num] = RandomForestClassifier(
