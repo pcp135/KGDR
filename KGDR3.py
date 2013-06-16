@@ -1,5 +1,5 @@
 import numpy as np
-import datetime.datetime as dt
+from datetime import datetime as dt
 from sklearn import svm, metrics
 from sklearn.cross_validation import KFold
 from scipy import stats
