@@ -5,7 +5,7 @@ from sklearn.cross_validation import KFold
 from scipy import stats
 
 with open('KGDR3.log','a') as f:
-	X = np.genfromtxt('reducedtrain.csv', delimiter=',')
+	X = np.genfromtxt('train.csv', delimiter=',')
 	Y = X[:,0]
 	X = X[:,1:]/255
 	f.write("\n\nStarting at %s\n" % dt.now())
