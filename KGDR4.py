@@ -27,9 +27,7 @@ with open('KGDR4.log','a') as f:
 		predicted = classifier[model_num].predict(X_test)
 		accuracy[model_num] = metrics.accuracy_score(expected, predicted)
 
-		f.write ("Accuracy with C = %f and gamma = %f on fold %i: %f\n" % (
-				C_val, gamma_val, model_num+1, accuracy[model_num]))
+		f.write ("Accuracy on fold %i: %f\n" % (model_num+1, accuracy[model_num]))
 	
 	f.write ("%s\n" % classifier[model_num])
-	f.write ("Overall accuracy with C = %f and gamma = %f: %f\n" % (
-						C_val, gamma_val, np.mean(accuracy)))
+	f.write ("Overall accuracy = %f: %f\n" % (np.mean(accuracy),))
