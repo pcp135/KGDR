@@ -11,8 +11,8 @@ with open('KGDR3.log','a') as f:
 	f.write("\n\nStarting at %s\n" % dt.now())
 	f.write("Data sets loaded and split\n")
 
-	for C_val in [100, 300, 1000]:
-		for gamma_val in [0.015, 0.0175, 0.02, 0.0225, 0.025]:
+	for C_val in [100]:
+		for gamma_val in [0.02, 0.021, 0.022, 0.023, 0.024, 0.025, 0.026, 0.027, 0.028]:
 
 			kf = KFold(len(Y), n_folds=5, indices=False)
 			classifier = [0]*5
@@ -22,7 +22,7 @@ with open('KGDR3.log','a') as f:
 				f.flush()
 				X_train, X_test, Y_train, Y_test = X[train], X[test], Y[train], Y[test]
 
-				classifier[model_num] = svm.SVC(C=C_val,cache_size=750,gamma=gamma_val)
+				classifier[model_num] = svm.SVC(C=C_val,cache_size=1000,gamma=gamma_val)
 
 				classifier[model_num].fit(X_train, Y_train)
 
