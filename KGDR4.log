@@ -374,3 +374,71 @@ RandomForestClassifier(bootstrap=True, compute_importances=False,
             verbose=0)
 Overall accuracy with estimators = 300, features = 40: 0.938400
 Finishing at 2013-06-16 07:55:44.564443
+
+
+Starting at 2013-06-16 11:33:17.515124
+Data sets loaded and split
+Accuracy on fold 1 with estimators = 100, features = 28: 0.935000
+Accuracy on fold 2 with estimators = 100, features = 28: 0.934000
+Accuracy on fold 3 with estimators = 100, features = 28: 0.935000
+Accuracy on fold 4 with estimators = 100, features = 28: 0.927000
+Accuracy on fold 5 with estimators = 100, features = 28: 0.940000
+RandomForestClassifier(bootstrap=True, compute_importances=False,
+            criterion=gini, max_depth=None, max_features=28,
+            min_density=0.1, min_samples_leaf=1, min_samples_split=2,
+            n_estimators=100, n_jobs=1, oob_score=False, random_state=None,
+            verbose=0)
+Overall accuracy with estimators = 100, features = 28: 0.934200
+Accuracy on fold 1 with estimators = 100, features = 40: 0.931000
+Accuracy on fold 2 with estimators = 100, features = 40: 0.933000
+Accuracy on fold 3 with estimators = 100, features = 40: 0.936000
+Accuracy on fold 4 with estimators = 100, features = 40: 0.924000
+Accuracy on fold 5 with estimators = 100, features = 40: 0.939000
+RandomForestClassifier(bootstrap=True, compute_importances=False,
+            criterion=gini, max_depth=None, max_features=40,
+            min_density=0.1, min_samples_leaf=1, min_samples_split=2,
+            n_estimators=100, n_jobs=1, oob_score=False, random_state=None,
+            verbose=0)
+Overall accuracy with estimators = 100, features = 40: 0.932600
+Accuracy on fold 1 with estimators = 100, features = 50: 0.932000
+Accuracy on fold 2 with estimators = 100, features = 50: 0.930000
+Accuracy on fold 3 with estimators = 100, features = 50: 0.942000
+Accuracy on fold 4 with estimators = 100, features = 50: 0.920000
+Accuracy on fold 5 with estimators = 100, features = 50: 0.940000
+RandomForestClassifier(bootstrap=True, compute_importances=False,
+            criterion=gini, max_depth=None, max_features=50,
+            min_density=0.1, min_samples_leaf=1, min_samples_split=2,
+            n_estimators=100, n_jobs=1, oob_score=False, random_state=None,
+            verbose=0)
+Overall accuracy with estimators = 100, features = 50: 0.932800
+Accuracy on fold 1 with estimators = 100, features = 100: 0.932000
+Accuracy on fold 2 with estimators = 100, features = 100: 0.934000
+Accuracy on fold 3 with estimators = 100, features = 100: 0.940000
+Accuracy on fold 4 with estimators = 100, features = 100: 0.922000
+Accuracy on fold 5 with estimators = 100, features = 100: 0.940000
+RandomForestClassifier(bootstrap=True, compute_importances=False,
+            criterion=gini, max_depth=None, max_features=100,
+            min_density=0.1, min_samples_leaf=1, min_samples_split=2,
+            n_estimators=100, n_jobs=1, oob_score=False, random_state=None,
+            verbose=0)
+Overall accuracy with estimators = 100, features = 100: 0.933600
+Accuracy on fold 1 with estimators = 100, features = 200: 0.932000
+Accuracy on fold 2 with estimators = 100, features = 200: 0.926000
+Accuracy on fold 3 with estimators = 100, features = 200: 0.933000
+Accuracy on fold 4 with estimators = 100, features = 200: 0.918000
+Accuracy on fold 5 with estimators = 100, features = 200: 0.934000
+RandomForestClassifier(bootstrap=True, compute_importances=False,
+            criterion=gini, max_depth=None, max_features=200,
+            min_density=0.1, min_samples_leaf=1, min_samples_split=2,
+            n_estimators=100, n_jobs=1, oob_score=False, random_state=None,
+            verbose=0)
+Overall accuracy with estimators = 100, features = 200: 0.928600
+Accuracy on fold 1 with estimators = 300, features = 28: 0.934000
+Accuracy on fold 2 with estimators = 300, features = 28: 0.935000
+Accuracy on fold 3 with estimators = 300, features = 28: 0.943000
+Accuracy on fold 4 with estimators = 300, features = 28: 0.933000
+Accuracy on fold 5 with estimators = 300, features = 28: 0.949000
+RandomForestClassifier(bootstrap=True, compute_importances=False,
+            criterion=gini, max_depth=None, max_features=28,
+            min_density=0.1, min_samples_leaf=1, min_samples_split=2,
+            n_estimators=300, n_jobs=
