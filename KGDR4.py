@@ -19,7 +19,7 @@ with open('KGDR4.log','a') as f:
 
 		X_train, X_test, Y_train, Y_test = X[train], X[test], Y[train], Y[test]
 
-		classifier[model_num] = RandomForestClassifier(n_estimators=10)
+		classifier[model_num] = RandomForestClassifier(n_estimators=50,max_features=30)
 
 		classifier[model_num].fit(X_train, Y_train)
 
@@ -30,4 +30,5 @@ with open('KGDR4.log','a') as f:
 		f.write ("Accuracy on fold %i: %f\n" % (model_num+1, accuracy[model_num]))
 	
 	f.write ("%s\n" % classifier[model_num])
-	f.write ("Overall accuracy = %f: %f\n" % (np.mean(accuracy),))
+	f.write ("Overall accuracy = %f\n" % (np.mean(accuracy),))
+	f.write("Finishing at %s\n" % dt.now())

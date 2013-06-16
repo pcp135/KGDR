@@ -8,7 +8,7 @@ with open('KGDR3.log','a') as f:
 	X = np.genfromtxt('reducedtrain.csv', delimiter=',')
 	Y = X[:,0]
 	X = X[:,1:]/255
-	f.write("Starting at %s" % dt.now())
+	f.write("\n\nStarting at %s\n" % dt.now())
 	f.write("Data sets loaded and split\n")
 
 	for C_val in [100, 300, 1000]:
@@ -35,3 +35,4 @@ with open('KGDR3.log','a') as f:
 			f.write ("%s\n" % classifier[model_num])
 			f.write ("Overall accuracy with C = %f and gamma = %f: %f\n" % (
 								C_val, gamma_val, np.mean(accuracy)))
+			f.write("Finishing at %s\n" % dt.now())

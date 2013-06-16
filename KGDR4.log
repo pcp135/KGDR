@@ -2,3 +2,95 @@
 
 Starting at 2013-06-16 00:12:55.957749
 Data sets loaded and split
+
+
+Starting at 2013-06-16 00:20:05.255224
+Data sets loaded and split
+Accuracy on fold 1: 0.879000
+Accuracy on fold 2: 0.876000
+Accuracy on fold 3: 0.886000
+Accuracy on fold 4: 0.869000
+Accuracy on fold 5: 0.878000
+RandomForestClassifier(bootstrap=True, compute_importances=False,
+            criterion=gini, max_depth=None, max_features=auto,
+            min_density=0.1, min_samples_leaf=1, min_samples_split=2,
+            n_estimators=10, n_jobs=1, oob_score=False, random_state=None,
+            verbose=0)
+
+
+Starting at 2013-06-16 00:22:14.283705
+Data sets loaded and split
+Accuracy on fold 1: 0.912000
+Accuracy on fold 2: 0.908000
+Accuracy on fold 3: 0.921000
+Accuracy on fold 4: 0.910000
+Accuracy on fold 5: 0.922000
+RandomForestClassifier(bootstrap=True, compute_importances=False,
+            criterion=gini, max_depth=None, max_features=auto,
+            min_density=0.1, min_samples_leaf=1, min_samples_split=2,
+            n_estimators=20, n_jobs=1, oob_score=False, random_state=None,
+            verbose=0)
+Overall accuracy = 0.914600
+
+
+Starting at 2013-06-16 00:30:17.766579
+Data sets loaded and split
+Accuracy on fold 1: 0.918000
+Accuracy on fold 2: 0.923000
+Accuracy on fold 3: 0.926000
+Accuracy on fold 4: 0.914000
+Accuracy on fold 5: 0.938000
+RandomForestClassifier(bootstrap=True, compute_importances=False,
+            criterion=gini, max_depth=None, max_features=28,
+            min_density=0.1, min_samples_leaf=1, min_samples_split=2,
+            n_estimators=30, n_jobs=1, oob_score=False, random_state=None,
+            verbose=0)
+Overall accuracy = 0.923800
+
+
+Starting at 2013-06-16 00:32:06.747424
+Data sets loaded and split
+Accuracy on fold 1: 0.932000
+Accuracy on fold 2: 0.939000
+Accuracy on fold 3: 0.927000
+Accuracy on fold 4: 0.924000
+Accuracy on fold 5: 0.939000
+RandomForestClassifier(bootstrap=True, compute_importances=False,
+            criterion=gini, max_depth=None, max_features=28,
+            min_density=0.1, min_samples_leaf=1, min_samples_split=2,
+            n_estimators=50, n_jobs=1, oob_score=False, random_state=None,
+            verbose=0)
+Overall accuracy = 0.932200
+Finishing at 2013-06-16 00:33:37.899501
+
+
+Starting at 2013-06-16 00:34:28.192614
+Data sets loaded and split
+Accuracy on fold 1: 0.920000
+Accuracy on fold 2: 0.935000
+Accuracy on fold 3: 0.937000
+Accuracy on fold 4: 0.919000
+Accuracy on fold 5: 0.932000
+RandomForestClassifier(bootstrap=True, compute_importances=False,
+            criterion=gini, max_depth=None, max_features=50,
+            min_density=0.1, min_samples_leaf=1, min_samples_split=2,
+            n_estimators=50, n_jobs=1, oob_score=False, random_state=None,
+            verbose=0)
+Overall accuracy = 0.928600
+Finishing at 2013-06-16 00:36:03.725763
+
+
+Starting at 2013-06-16 00:36:44.806376
+Data sets loaded and split
+Accuracy on fold 1: 0.936000
+Accuracy on fold 2: 0.921000
+Accuracy on fold 3: 0.934000
+Accuracy on fold 4: 0.916000
+Accuracy on fold 5: 0.936000
+RandomForestClassifier(bootstrap=True, compute_importances=False,
+            criterion=gini, max_depth=None, max_features=30,
+            min_density=0.1, min_samples_leaf=1, min_samples_split=2,
+            n_estimators=50, n_jobs=1, oob_score=False, random_state=None,
+            verbose=0)
+Overall accuracy = 0.928600
+Finishing at 2013-06-16 00:38:17.234467
