@@ -12,8 +12,8 @@ with open('KGDR4.log','a') as f:
 	f.write("\n\nStarting at %s\n" % dt.now())
 	f.write("Data sets loaded and split\n")
 	
-	for ests in [10,30,60,100,300]:
-		for feats in [10,20,28,30,40]:
+	for ests in [100,300,1000,3000,10000]:
+		for feats in [28,40,50,100,200]:
 			kf = KFold(len(Y), n_folds=5, indices=False)
 			classifier = [0]*5
 			accuracy = [0]*5
