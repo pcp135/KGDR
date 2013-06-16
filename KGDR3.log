@@ -393,3 +393,71 @@ SVC(C=1000, cache_size=750, class_weight=None, coef0=0.0, degree=3,
   gamma=0.025, kernel=rbf, max_iter=-1, probability=False, shrinking=True,
   tol=0.001, verbose=False)
 Overall accuracy with C = 1000.000000 and gamma = 0.025000: 0.960400
+
+
+Starting at 2013-06-16 04:52:06.043762
+Data sets loaded and split
+Accuracy with C = 100.000000 and gamma = 0.015000 on fold 1: 0.980595
+Accuracy with C = 100.000000 and gamma = 0.015000 on fold 2: 0.981667
+Accuracy with C = 100.000000 and gamma = 0.015000 on fold 3: 0.978452
+Accuracy with C = 100.000000 and gamma = 0.015000 on fold 4: 0.980833
+Accuracy with C = 100.000000 and gamma = 0.015000 on fold 5: 0.982500
+SVC(C=100, cache_size=750, class_weight=None, coef0=0.0, degree=3,
+  gamma=0.015, kernel=rbf, max_iter=-1, probability=False, shrinking=True,
+  tol=0.001, verbose=False)
+Overall accuracy with C = 100.000000 and gamma = 0.015000: 0.980810
+Finishing at 2013-06-16 06:04:56.178464
+Accuracy with C = 100.000000 and gamma = 0.017500 on fold 1: 0.981310
+Accuracy with C = 100.000000 and gamma = 0.017500 on fold 2: 0.981905
+Accuracy with C = 100.000000 and gamma = 0.017500 on fold 3: 0.979167
+Accuracy with C = 100.000000 and gamma = 0.017500 on fold 4: 0.980833
+Accuracy with C = 100.000000 and gamma = 0.017500 on fold 5: 0.982381
+SVC(C=100, cache_size=750, class_weight=None, coef0=0.0, degree=3,
+  gamma=0.0175, kernel=rbf, max_iter=-1, probability=False, shrinking=True,
+  tol=0.001, verbose=False)
+Overall accuracy with C = 100.000000 and gamma = 0.017500: 0.981119
+Finishing at 2013-06-16 07:23:25.171950
+Accuracy with C = 100.000000 and gamma = 0.020000 on fold 1: 0.981905
+Accuracy with C = 100.000000 and gamma = 0.020000 on fold 2: 0.982619
+Accuracy with C = 100.000000 and gamma = 0.020000 on fold 3: 0.979524
+Accuracy with C = 100.000000 and gamma = 0.020000 on fold 4: 0.981190
+Accuracy with C = 100.000000 and gamma = 0.020000 on fold 5: 0.982619
+SVC(C=100, cache_size=750, class_weight=None, coef0=0.0, degree=3, gamma=0.02,
+  kernel=rbf, max_iter=-1, probability=False, shrinking=True, tol=0.001,
+  verbose=False)
+Overall accuracy with C = 100.000000 and gamma = 0.020000: 0.981571
+Finishing at 2013-06-16 08:21:56.417537
+Accuracy with C = 100.000000 and gamma = 0.022500 on fold 1: 0.982262
+Accuracy with C = 100.000000 and gamma = 0.022500 on fold 2: 0.982857
+Accuracy with C = 100.000000 and gamma = 0.022500 on fold 3: 0.979643
+Accuracy with C = 100.000000 and gamma = 0.022500 on fold 4: 0.981429
+Accuracy with C = 100.000000 and gamma = 0.022500 on fold 5: 0.982857
+SVC(C=100, cache_size=750, class_weight=None, coef0=0.0, degree=3,
+  gamma=0.0225, kernel=rbf, max_iter=-1, probability=False, shrinking=True,
+  tol=0.001, verbose=False)
+Overall accuracy with C = 100.000000 and gamma = 0.022500: 0.981810
+Finishing at 2013-06-16 09:07:49.275874
+Accuracy with C = 100.000000 and gamma = 0.025000 on fold 1: 0.982500
+Accuracy with C = 100.000000 and gamma = 0.025000 on fold 2: 0.983333
+Accuracy with C = 100.000000 and gamma = 0.025000 on fold 3: 0.980238
+Accuracy with C = 100.000000 and gamma = 0.025000 on fold 4: 0.982024
+Accuracy with C = 100.000000 and gamma = 0.025000 on fold 5: 0.982738
+SVC(C=100, cache_size=750, class_weight=None, coef0=0.0, degree=3,
+  gamma=0.025, kernel=rbf, max_iter=-1, probability=False, shrinking=True,
+  tol=0.001, verbose=False)
+Overall accuracy with C = 100.000000 and gamma = 0.025000: 0.982167
+Finishing at 2013-06-16 09:57:34.465795
+Accuracy with C = 300.000000 and gamma = 0.015000 on fold 1: 0.980595
+Accuracy with C = 300.000000 and gamma = 0.015000 on fold 2: 0.981667
+Accuracy with C = 300.000000 and gamma = 0.015000 on fold 3: 0.978452
+Accuracy with C = 300.000000 and gamma = 0.015000 on fold 4: 0.980833
+Accuracy with C = 300.000000 and gamma = 0.015000 on fold 5: 0.982500
+SVC(C=300, cache_size=750, class_weight=None, coef0=0.0, degree=3,
+  gamma=0.015, kernel=rbf, max_iter=-1, probability=False, shrinking=True,
+  tol=0.001, verbose=False)
+Overall accuracy with C = 300.000000 and gamma = 0.015000: 0.980810
+Finishing at 2013-06-16 10:33:57.318563
+Accuracy with C = 300.000000 and gamma = 0.017500 on fold 1: 0.981310
+Accuracy with C = 300.000000 and gamma = 0.017500 on fold 2: 0.981905
+Accuracy with C = 300.000000 and gamma = 0.017500 on fold 3: 0.979167
+Accuracy with C = 300.000000 and gamma = 0.017500
