@@ -1,4 +1,5 @@
 import numpy as np
+import datetime.datetime as dt
 from sklearn import svm, metrics
 from sklearn.cross_validation import KFold
 from scipy import stats
@@ -7,10 +8,11 @@ with open('KGDR3.log','a') as f:
 	X = np.genfromtxt('reducedtrain.csv', delimiter=',')
 	Y = X[:,0]
 	X = X[:,1:]/255
+	f.write("Starting at %s" % dt.now())
 	f.write("Data sets loaded and split\n")
 
-	for C_val in [33.33, 66.66, 100, 133.33, 166.66]:
-		for gamma_val in [0.01, 0.02, 0.03, 0.04, 0.05, 0.06]:
+	for C_val in [3,10, 33, 100, 300]:
+		for gamma_val in [0.01, 0.015, 0.02, 0.025]:
 
 			kf = KFold(len(Y), n_folds=5, indices=False)
 			classifier = [0]*5
