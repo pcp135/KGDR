@@ -12,7 +12,7 @@ with open('KGDR3.log','a') as f:
 	f.write("Data sets loaded and split\n")
 
 	for C_val in [100]:
-		for gamma_val in [0.02, 0.021, 0.022, 0.023, 0.024, 0.025, 0.026, 0.027, 0.028]:
+		for gamma_val in [0.021, 0.022, 0.023, 0.024, 0.026, 0.027, 0.028]:
 
 			kf = KFold(len(Y), n_folds=5, indices=False)
 			classifier = [0]*5
