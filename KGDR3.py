@@ -22,7 +22,7 @@ with open('KGDR3.log','a') as f:
 				f.flush()
 				X_train, X_test, Y_train, Y_test = X[train], X[test], Y[train], Y[test]
 
-				classifier[model_num] = svm.SVC(C=C_val,cache_size=1000,gamma=gamma_val)
+				classifier[model_num] = svm.SVC(C=C_val,cache_size=750,gamma=gamma_val)
 
 				classifier[model_num].fit(X_train, Y_train)
 
