@@ -36,4 +36,4 @@ with open('KGDR3.log','a') as f:
 			f.write ("%s\n" % classifier[model_num])
 			f.write ("Overall accuracy with C = %f and gamma = %f: %f\n" % (
 								C_val, gamma_val, np.mean(accuracy)))
-			f.write("Finishing at %s\n" % dt.now())
+	f.write("Finishing at %s\n" % dt.now())

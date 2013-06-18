@@ -17,7 +17,7 @@ for model_num, (train, test) in enumerate(kf):
 	X_train, X_test, Y_train, Y_test = X[train], X[test], Y[train], Y[test]
 
 	# Create a classifier: a support vector classifier
-	classifier[model_num] = svm.SVC(C=100,cache_size=750,gamma=0.02)
+	classifier[model_num] = svm.SVC(C=100,cache_size=750,gamma=0.027)
 
 	# We learn the digits on the first half of the digits
 	classifier[model_num].fit(X_train, Y_train)
@@ -40,7 +40,7 @@ for i, model in enumerate(classifier):
 #print metrics.classification_report(Y, voted)
 voted = stats.mode(pred[1:6],axis=0)[0][0]
 
-f=open('result6.csv','w')
+f=open('result7.csv','w')
 for value in voted:
 	f.write('%s\n' % (int(value),))
 f.close()
